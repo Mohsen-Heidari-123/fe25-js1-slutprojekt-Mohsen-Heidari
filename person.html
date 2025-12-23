@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="./js/main.js" defer></script>
+    <title>The Movie Database - Personer</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="https://lh4.googleusercontent.com/proxy/3GEblhUnKV3PzW7XggaTYRhMfqxk3cE9c9yfQaVIGd5xcCcuUqeE8u69rqWsOnjR3KJxAhFIoM8IhUaw_F_52bsRhPaIlNjmm5qI1mGsElbP"
+            alt="Logo"
+          />
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li class="dropdown">
+          <button class="dropbtn">Filmer</button>
+          <div class="dropdown-content">
+            <button id="topRatedBtn">Top Rated</button>
+            <button id="popularBtn">Popular</button>
+          </div>
+        </li>
+        <li><button id="tvBtn">TV-Serier</button></li>
+        <li><button id="personBtn">Personer</button></li>
+      </ul>
+    </nav>
+
+    <main id="content">
+      <div id="headerContent"></div>
+      <div class="sub_media">
+        <form id="search_form">
+          <input
+            type="text"
+            id="search_input"
+            name="query"
+            placeholder="Sök efter en person, filmer"
+            autocomplete="off"
+            required
+          />
+          <button type="submit">Sök</button>
+        </form>
+      </div>
+
+      <div id="personcontent"></div>
+      <div id="personPagination"></div>
+      <div id="filmcontent"></div>
+    </main>
+  </body>
+</html>
